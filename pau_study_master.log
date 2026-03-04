@@ -1,0 +1,927 @@
+2026-01-12 20:35:25,375 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 20:35:25,376 - INFO - Iniciando MongoDB...
+2026-01-12 20:35:25,376 - INFO - Configurando MongoDB...
+2026-01-12 20:35:27,433 - INFO - Directorio de datos MongoDB: C:\Users\Darío\Downloads\PAUStudyMaster\app\data\db
+2026-01-12 20:35:27,435 - INFO - Directorio existe: True
+2026-01-12 20:35:27,436 - INFO - Es directorio: True
+2026-01-12 20:35:27,455 - INFO - Ejecutando: C:\Users\Darío\Downloads\PAUStudyMaster\app\mongodb\bin\mongod.exe --dbpath C:\Users\Darío\Downloads\PAUStudyMaster\app\data\db --port 27017 --logpath C:\Users\Darío\Downloads\PAUStudyMaster\app\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --journal --noauth
+2026-01-12 20:35:27,600 - INFO - MongoDB iniciado en puerto 27017 (PID: 19452)
+2026-01-12 20:35:27,600 - INFO - MongoDB guardará datos en: C:\Users\Darío\Downloads\PAUStudyMaster\app\data\db
+2026-01-12 20:35:29,648 - ERROR - Código de salida: 2
+2026-01-12 20:35:29,648 - ERROR - STDERR: Error parsing command line: unrecognised option '--journal'
+try 'C:\Users\Darío\Downloads\PAUStudyMaster\app\mongodb\bin\mongod.exe --help' for more information
+
+2026-01-12 20:35:52,485 - ERROR - No se pudo iniciar MongoDB. Abortando.
+2026-01-12 20:40:28,036 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 20:40:28,041 - INFO - Iniciando MongoDB...
+2026-01-12 20:40:28,041 - INFO - Configurando MongoDB...
+2026-01-12 20:40:30,471 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app\data\db
+2026-01-12 20:40:30,472 - INFO - Directorio existe: True
+2026-01-12 20:40:30,474 - INFO - Es directorio: True
+2026-01-12 20:40:30,568 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --journal --noauth
+2026-01-12 20:40:30,622 - INFO - MongoDB iniciado en puerto 27017 (PID: 38716)
+2026-01-12 20:40:30,657 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app\data\db
+2026-01-12 20:40:33,261 - ERROR - Código de salida: 2
+2026-01-12 20:40:33,263 - ERROR - STDERR: Error parsing command line: unrecognised option '--journal'
+try 'c:\Users\Darío\Downloads\PAUStudyMaster\app\mongodb\bin\mongod.exe --help' for more information
+
+2026-01-12 20:41:22,228 - ERROR - No se pudo iniciar MongoDB. Abortando.
+2026-01-12 20:41:22,729 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 20:41:22,730 - INFO - Iniciando MongoDB...
+2026-01-12 20:41:22,730 - INFO - Configurando MongoDB...
+2026-01-12 20:41:24,782 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app\data\db
+2026-01-12 20:41:24,783 - INFO - Directorio existe: True
+2026-01-12 20:41:24,784 - INFO - Es directorio: True
+2026-01-12 20:41:24,813 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --journal --noauth
+2026-01-12 20:41:24,829 - INFO - MongoDB iniciado en puerto 27017 (PID: 22204)
+2026-01-12 20:41:24,831 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app\data\db
+2026-01-12 20:41:26,894 - ERROR - Código de salida: 2
+2026-01-12 20:41:26,895 - ERROR - STDERR: Error parsing command line: unrecognised option '--journal'
+try 'c:\Users\Darío\Downloads\PAUStudyMaster\app\mongodb\bin\mongod.exe --help' for more information
+
+2026-01-12 20:41:28,584 - ERROR - No se pudo iniciar MongoDB. Abortando.
+2026-01-12 23:36:58,327 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:36:58,328 - INFO - Iniciando MongoDB...
+2026-01-12 23:36:58,332 - INFO - Configurando MongoDB...
+2026-01-12 23:37:00,551 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:37:00,560 - INFO - Directorio existe: True
+2026-01-12 23:37:00,583 - INFO - Es directorio: True
+2026-01-12 23:37:00,720 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --journal --noauth
+2026-01-12 23:37:00,734 - INFO - MongoDB iniciado en puerto 27017 (PID: 15604)
+2026-01-12 23:37:00,745 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:37:03,079 - ERROR - Código de salida: 2
+2026-01-12 23:37:03,080 - ERROR - STDERR: Error parsing command line: unrecognised option '--journal'
+try 'c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --help' for more information
+
+2026-01-12 23:37:07,030 - ERROR - No se pudo iniciar MongoDB. Abortando.
+2026-01-12 23:37:26,415 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:37:26,416 - INFO - Iniciando MongoDB...
+2026-01-12 23:37:26,416 - INFO - Configurando MongoDB...
+2026-01-12 23:37:28,484 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:37:28,485 - INFO - Directorio existe: True
+2026-01-12 23:37:28,485 - INFO - Es directorio: True
+2026-01-12 23:37:28,520 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-12 23:37:28,536 - INFO - MongoDB iniciado en puerto 27017 (PID: 50132)
+2026-01-12 23:37:28,539 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:37:41,187 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-12 23:37:41,199 - INFO -   - collection-0-1970323476177700974.wt
+2026-01-12 23:37:41,200 - INFO -   - collection-2-1970323476177700974.wt
+2026-01-12 23:37:41,201 - INFO -   - collection-4-1970323476177700974.wt
+2026-01-12 23:37:41,210 - INFO -   - diagnostic.data
+2026-01-12 23:37:41,212 - INFO -   - index-1-1970323476177700974.wt
+2026-01-12 23:37:41,214 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-12 23:37:41,224 - INFO - Iniciando backend FastAPI...
+2026-01-12 23:37:43,275 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-12 23:37:43,276 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-12 23:37:43,277 - INFO - BACKEND_DIR existe: True
+2026-01-12 23:37:43,278 - INFO - server.py existe: True
+2026-01-12 23:37:43,278 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-12 23:37:43,279 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-12 23:37:43,293 - INFO - Backend iniciado en puerto 8001 (PID: 34000)
+2026-01-12 23:37:43,296 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-12 23:37:48,429 - ERROR - Código de salida: 1
+2026-01-12 23:37:48,471 - ERROR - STDERR: C:\Python314\python.exe: No module named uvicorn
+
+2026-01-12 23:38:05,305 - ERROR - No se pudo iniciar el backend. Abortando.
+2026-01-12 23:38:05,305 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-12 23:38:05,306 - INFO - Cerrando proceso PID 50132...
+2026-01-12 23:38:05,815 - INFO - Proceso 50132 cerrado limpiamente
+2026-01-12 23:38:05,816 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-12 23:38:07,987 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-12 23:46:59,011 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:46:59,013 - INFO - Iniciando MongoDB...
+2026-01-12 23:46:59,013 - INFO - Configurando MongoDB...
+2026-01-12 23:47:03,852 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:47:03,853 - INFO - Directorio existe: True
+2026-01-12 23:47:03,854 - INFO - Es directorio: True
+2026-01-12 23:47:03,870 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-12 23:47:03,881 - INFO - MongoDB iniciado en puerto 27017 (PID: 29564)
+2026-01-12 23:47:03,884 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:47:15,998 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-12 23:47:16,003 - INFO -   - collection-0-1528304156200846810.wt
+2026-01-12 23:47:16,003 - INFO -   - collection-2-1528304156200846810.wt
+2026-01-12 23:47:16,006 - INFO -   - collection-4-1528304156200846810.wt
+2026-01-12 23:47:16,007 - INFO -   - diagnostic.data
+2026-01-12 23:47:16,008 - INFO -   - index-1-1528304156200846810.wt
+2026-01-12 23:47:16,009 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-12 23:47:16,009 - INFO - Iniciando backend FastAPI...
+2026-01-12 23:47:18,066 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-12 23:47:18,067 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-12 23:47:18,067 - INFO - BACKEND_DIR existe: True
+2026-01-12 23:47:18,068 - INFO - server.py existe: True
+2026-01-12 23:47:18,068 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-12 23:47:18,069 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-12 23:47:18,078 - INFO - Backend iniciado en puerto 8001 (PID: 31024)
+2026-01-12 23:47:18,079 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-12 23:47:22,830 - ERROR - Código de salida: 1
+2026-01-12 23:47:22,871 - ERROR - STDERR: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\main.py", line 424, in main
+    run(
+    ~~~^
+        app,
+        ^^^^
+    ...<46 lines>...
+        h11_max_incomplete_event_size=h11_max_incomplete_event_size,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\main.py", line 594, in run
+    server.run()
+    ~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 71, in serve
+    await self._serve(sockets)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 78, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\config.py", line 439, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\importer.py", line 22, in import_from_string
+    raise exc from None
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "c:\Users\Daro\Downloads\PAUStudyMaster\app_final\backend\server.py", line 4, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+2026-01-12 23:48:14,781 - ERROR - No se pudo iniciar el backend. Abortando.
+2026-01-12 23:48:14,781 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-12 23:48:14,783 - INFO - Cerrando proceso PID 29564...
+2026-01-12 23:48:15,304 - INFO - Proceso 29564 cerrado limpiamente
+2026-01-12 23:48:15,304 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-12 23:48:17,371 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-12 23:48:46,898 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:48:46,901 - INFO - Iniciando MongoDB...
+2026-01-12 23:48:46,902 - INFO - Configurando MongoDB...
+2026-01-12 23:48:51,081 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:48:51,094 - INFO - Directorio existe: True
+2026-01-12 23:48:51,104 - INFO - Es directorio: True
+2026-01-12 23:48:51,195 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-12 23:48:51,211 - INFO - MongoDB iniciado en puerto 27017 (PID: 29040)
+2026-01-12 23:48:51,226 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:49:02,921 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-12 23:49:02,927 - INFO -   - collection-0--5608994260835026837.wt
+2026-01-12 23:49:02,928 - INFO -   - collection-2--5608994260835026837.wt
+2026-01-12 23:49:02,934 - INFO -   - collection-4--5608994260835026837.wt
+2026-01-12 23:49:02,935 - INFO -   - diagnostic.data
+2026-01-12 23:49:02,935 - INFO -   - index-1--5608994260835026837.wt
+2026-01-12 23:49:02,936 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-12 23:49:02,937 - INFO - Iniciando backend FastAPI...
+2026-01-12 23:49:04,974 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-12 23:49:04,975 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-12 23:49:04,976 - INFO - BACKEND_DIR existe: True
+2026-01-12 23:49:04,977 - INFO - server.py existe: True
+2026-01-12 23:49:04,977 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-12 23:49:04,978 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-12 23:49:04,994 - INFO - Backend iniciado en puerto 8001 (PID: 34712)
+2026-01-12 23:49:04,994 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-12 23:49:09,714 - ERROR - Código de salida: 1
+2026-01-12 23:49:09,782 - ERROR - STDERR: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\main.py", line 424, in main
+    run(
+    ~~~^
+        app,
+        ^^^^
+    ...<46 lines>...
+        h11_max_incomplete_event_size=h11_max_incomplete_event_size,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\main.py", line 594, in run
+    server.run()
+    ~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 71, in serve
+    await self._serve(sockets)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 78, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\config.py", line 439, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\importer.py", line 22, in import_from_string
+    raise exc from None
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "c:\Users\Daro\Downloads\PAUStudyMaster\app_final\backend\server.py", line 16, in <module>
+    import httpx
+ModuleNotFoundError: No module named 'httpx'
+
+2026-01-12 23:49:14,650 - ERROR - No se pudo iniciar el backend. Abortando.
+2026-01-12 23:49:14,651 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-12 23:49:14,651 - INFO - Cerrando proceso PID 29040...
+2026-01-12 23:49:15,077 - INFO - Proceso 29040 cerrado limpiamente
+2026-01-12 23:49:15,079 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-12 23:49:17,104 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-12 23:49:41,743 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:49:41,746 - INFO - Iniciando MongoDB...
+2026-01-12 23:49:41,747 - INFO - Configurando MongoDB...
+2026-01-12 23:49:45,796 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:49:45,807 - INFO - Directorio existe: True
+2026-01-12 23:49:45,809 - INFO - Es directorio: True
+2026-01-12 23:49:45,939 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-12 23:49:45,979 - INFO - MongoDB iniciado en puerto 27017 (PID: 19684)
+2026-01-12 23:49:45,993 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:49:59,399 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-12 23:49:59,404 - INFO -   - collection-0-5869853468937451690.wt
+2026-01-12 23:49:59,404 - INFO -   - collection-2-5869853468937451690.wt
+2026-01-12 23:49:59,404 - INFO -   - collection-4-5869853468937451690.wt
+2026-01-12 23:49:59,405 - INFO -   - diagnostic.data
+2026-01-12 23:49:59,405 - INFO -   - index-1-5869853468937451690.wt
+2026-01-12 23:49:59,406 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-12 23:49:59,406 - INFO - Iniciando backend FastAPI...
+2026-01-12 23:50:01,462 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-12 23:50:01,464 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-12 23:50:01,465 - INFO - BACKEND_DIR existe: True
+2026-01-12 23:50:01,466 - INFO - server.py existe: True
+2026-01-12 23:50:01,466 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-12 23:50:01,467 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-12 23:50:01,477 - INFO - Backend iniciado en puerto 8001 (PID: 22216)
+2026-01-12 23:50:01,479 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-12 23:50:10,955 - ERROR - Código de salida: 1
+2026-01-12 23:50:10,997 - ERROR - STDERR: c:\Users\Daro\Downloads\PAUStudyMaster\app_final\backend\server.py:17: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\main.py", line 424, in main
+    run(
+    ~~~^
+        app,
+        ^^^^
+    ...<46 lines>...
+        h11_max_incomplete_event_size=h11_max_incomplete_event_size,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\main.py", line 594, in run
+    server.run()
+    ~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 71, in serve
+    await self._serve(sockets)
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\server.py", line 78, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\config.py", line 439, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\importer.py", line 22, in import_from_string
+    raise exc from None
+  File "C:\Users\Daro\AppData\Roaming\Python\Python314\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "c:\Users\Daro\Downloads\PAUStudyMaster\app_final\backend\server.py", line 18, in <module>
+    import PyPDF2
+ModuleNotFoundError: No module named 'PyPDF2'
+
+2026-01-12 23:50:48,195 - ERROR - No se pudo iniciar el backend. Abortando.
+2026-01-12 23:50:48,195 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-12 23:50:48,196 - INFO - Cerrando proceso PID 19684...
+2026-01-12 23:50:48,598 - INFO - Proceso 19684 cerrado limpiamente
+2026-01-12 23:50:48,599 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-12 23:50:50,680 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-12 23:51:58,066 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:51:58,067 - INFO - Iniciando MongoDB...
+2026-01-12 23:51:58,067 - INFO - Configurando MongoDB...
+2026-01-12 23:52:02,215 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:52:02,216 - INFO - Directorio existe: True
+2026-01-12 23:52:02,217 - INFO - Es directorio: True
+2026-01-12 23:52:02,232 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-12 23:52:02,242 - INFO - MongoDB iniciado en puerto 27017 (PID: 22844)
+2026-01-12 23:52:02,245 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:52:13,336 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-12 23:52:13,344 - INFO -   - collection-0--2475387887526517480.wt
+2026-01-12 23:52:13,344 - INFO -   - collection-2--2475387887526517480.wt
+2026-01-12 23:52:13,345 - INFO -   - collection-4--2475387887526517480.wt
+2026-01-12 23:52:13,346 - INFO -   - diagnostic.data
+2026-01-12 23:52:13,346 - INFO -   - index-1--2475387887526517480.wt
+2026-01-12 23:52:13,347 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-12 23:52:13,347 - INFO - Iniciando backend FastAPI...
+2026-01-12 23:52:15,369 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-12 23:52:15,397 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-12 23:52:15,410 - INFO - BACKEND_DIR existe: True
+2026-01-12 23:52:15,413 - INFO - server.py existe: True
+2026-01-12 23:52:15,414 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-12 23:52:15,415 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-12 23:52:15,431 - INFO - Backend iniciado en puerto 8001 (PID: 192)
+2026-01-12 23:52:15,441 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-12 23:52:25,104 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-12 23:55:03,447 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-12 23:55:03,447 - INFO - Cerrando proceso PID 22844...
+2026-01-12 23:55:03,995 - INFO - Proceso 22844 cerrado limpiamente
+2026-01-12 23:55:03,996 - INFO - Cerrando proceso PID 192...
+2026-01-12 23:55:04,046 - INFO - Proceso 192 cerrado limpiamente
+2026-01-12 23:55:04,047 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-12 23:55:06,079 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-12 23:55:08,957 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-12 23:55:08,958 - INFO - Iniciando MongoDB...
+2026-01-12 23:55:08,959 - INFO - Configurando MongoDB...
+2026-01-12 23:55:12,896 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:55:12,899 - INFO - Directorio existe: True
+2026-01-12 23:55:12,901 - INFO - Es directorio: True
+2026-01-12 23:55:12,923 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-12 23:55:12,934 - INFO - MongoDB iniciado en puerto 27017 (PID: 38288)
+2026-01-12 23:55:12,935 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-12 23:55:24,559 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-12 23:55:24,569 - INFO -   - collection-0-6546134006501586598.wt
+2026-01-12 23:55:24,571 - INFO -   - collection-2-6546134006501586598.wt
+2026-01-12 23:55:24,572 - INFO -   - collection-4-6546134006501586598.wt
+2026-01-12 23:55:24,572 - INFO -   - diagnostic.data
+2026-01-12 23:55:24,574 - INFO -   - index-1-6546134006501586598.wt
+2026-01-12 23:55:24,581 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-12 23:55:24,582 - INFO - Iniciando backend FastAPI...
+2026-01-12 23:55:26,630 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-12 23:55:26,632 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-12 23:55:26,633 - INFO - BACKEND_DIR existe: True
+2026-01-12 23:55:26,633 - INFO - server.py existe: True
+2026-01-12 23:55:26,633 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-12 23:55:26,633 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-12 23:55:26,645 - INFO - Backend iniciado en puerto 8001 (PID: 19876)
+2026-01-12 23:55:26,646 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-12 23:55:36,401 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-12 23:58:52,443 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-12 23:58:52,444 - INFO - Cerrando proceso PID 38288...
+2026-01-12 23:58:53,434 - INFO - Proceso 38288 cerrado limpiamente
+2026-01-12 23:58:53,438 - INFO - Cerrando proceso PID 19876...
+2026-01-12 23:58:53,508 - INFO - Proceso 19876 cerrado limpiamente
+2026-01-12 23:58:53,509 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-12 23:58:55,552 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-13 00:00:57,309 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-13 00:00:57,311 - INFO - Iniciando MongoDB...
+2026-01-13 00:00:57,311 - INFO - Configurando MongoDB...
+2026-01-13 00:01:01,548 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-13 00:01:01,549 - INFO - Directorio existe: True
+2026-01-13 00:01:01,550 - INFO - Es directorio: True
+2026-01-13 00:01:01,582 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-13 00:01:01,589 - INFO - MongoDB iniciado en puerto 27017 (PID: 1504)
+2026-01-13 00:01:01,600 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-13 00:01:12,727 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 18 archivos/carpetas
+2026-01-13 00:01:12,747 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-13 00:01:12,748 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-13 00:01:12,751 - INFO -   - collection-4--5511260628942750685.wt
+2026-01-13 00:01:12,751 - INFO -   - diagnostic.data
+2026-01-13 00:01:12,752 - INFO -   - index-1--5511260628942750685.wt
+2026-01-13 00:01:12,752 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-13 00:01:12,752 - INFO - Iniciando backend FastAPI...
+2026-01-13 00:01:14,778 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-13 00:01:14,780 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-13 00:01:14,781 - INFO - BACKEND_DIR existe: True
+2026-01-13 00:01:14,781 - INFO - server.py existe: True
+2026-01-13 00:01:14,783 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-13 00:01:14,787 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-13 00:01:14,806 - INFO - Backend iniciado en puerto 8001 (PID: 42116)
+2026-01-13 00:01:14,808 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-13 00:01:24,906 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-13 00:04:00,342 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-13 00:04:00,342 - INFO - Cerrando proceso PID 1504...
+2026-01-13 00:04:01,041 - INFO - Proceso 1504 cerrado limpiamente
+2026-01-13 00:04:01,041 - INFO - Cerrando proceso PID 42116...
+2026-01-13 00:04:01,104 - INFO - Proceso 42116 cerrado limpiamente
+2026-01-13 00:04:01,105 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-13 00:04:03,135 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-17 22:00:18,100 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-17 22:00:18,164 - INFO - Iniciando MongoDB...
+2026-01-17 22:00:18,219 - INFO - Configurando MongoDB...
+2026-01-17 22:00:42,098 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-17 22:00:42,099 - INFO - Directorio existe: True
+2026-01-17 22:00:42,100 - INFO - Es directorio: True
+2026-01-17 22:00:42,219 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-17 22:00:42,435 - INFO - MongoDB iniciado en puerto 27017 (PID: 22920)
+2026-01-17 22:00:42,439 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-17 22:01:01,803 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 22 archivos/carpetas
+2026-01-17 22:01:01,888 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-17 22:01:01,889 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-17 22:01:01,892 - INFO -   - collection-4--5511260628942750685.wt
+2026-01-17 22:01:01,894 - INFO -   - collection-7--5511260628942750685.wt
+2026-01-17 22:01:01,937 - INFO -   - collection-9--5511260628942750685.wt
+2026-01-17 22:01:01,938 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-17 22:01:01,939 - INFO - Iniciando backend FastAPI...
+2026-01-17 22:01:03,989 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-17 22:01:04,018 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-17 22:01:04,024 - INFO - BACKEND_DIR existe: True
+2026-01-17 22:01:04,030 - INFO - server.py existe: True
+2026-01-17 22:01:04,031 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-17 22:01:04,031 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-17 22:01:04,058 - INFO - Backend iniciado en puerto 8001 (PID: 864)
+2026-01-17 22:01:04,059 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-17 22:01:26,321 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-17 22:07:25,215 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-17 22:07:25,215 - INFO - Cerrando proceso PID 22920...
+2026-01-17 22:07:25,955 - INFO - Proceso 22920 cerrado limpiamente
+2026-01-17 22:07:25,955 - INFO - Cerrando proceso PID 864...
+2026-01-17 22:07:25,997 - INFO - Proceso 864 cerrado limpiamente
+2026-01-17 22:07:25,998 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-17 22:07:28,021 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-17 22:07:33,022 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-17 22:07:33,023 - INFO - Iniciando MongoDB...
+2026-01-17 22:07:33,024 - INFO - Configurando MongoDB...
+2026-01-17 22:07:41,444 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-17 22:07:41,446 - INFO - Directorio existe: True
+2026-01-17 22:07:41,447 - INFO - Es directorio: True
+2026-01-17 22:07:41,467 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-17 22:07:41,475 - INFO - MongoDB iniciado en puerto 27017 (PID: 7028)
+2026-01-17 22:07:41,476 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-17 22:07:51,087 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-17 22:07:51,125 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-17 22:07:51,125 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-17 22:07:51,126 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-17 22:07:51,126 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-17 22:07:51,126 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-17 22:07:51,128 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-17 22:07:51,128 - INFO - Iniciando backend FastAPI...
+2026-01-17 22:07:53,168 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-17 22:07:53,169 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-17 22:07:53,170 - INFO - BACKEND_DIR existe: True
+2026-01-17 22:07:53,171 - INFO - server.py existe: True
+2026-01-17 22:07:53,171 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-17 22:07:53,172 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-17 22:07:53,182 - INFO - Backend iniciado en puerto 8001 (PID: 44256)
+2026-01-17 22:07:53,186 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-17 22:08:02,687 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-17 22:47:29,738 - ERROR - Un proceso ha terminado inesperadamente (PID: 44256)
+2026-01-17 22:47:29,749 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-17 22:47:29,752 - INFO - Cerrando proceso PID 7028...
+2026-01-17 22:47:30,886 - INFO - Proceso 7028 cerrado limpiamente
+2026-01-17 22:47:30,886 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-18 20:34:21,910 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-18 20:34:21,952 - INFO - Iniciando MongoDB...
+2026-01-18 20:34:22,004 - INFO - Configurando MongoDB...
+2026-01-18 20:34:38,407 - ERROR - No se pudo iniciar MongoDB. Abortando.
+2026-01-18 22:03:00,658 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-18 22:03:00,658 - INFO - Iniciando MongoDB...
+2026-01-18 22:03:00,659 - INFO - Configurando MongoDB...
+2026-01-18 22:03:06,454 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-18 22:03:06,455 - INFO - Directorio existe: True
+2026-01-18 22:03:06,456 - INFO - Es directorio: True
+2026-01-18 22:03:06,471 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-18 22:03:06,495 - INFO - MongoDB iniciado en puerto 27017 (PID: 50280)
+2026-01-18 22:03:06,503 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-18 22:03:25,780 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-18 22:03:25,801 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-18 22:03:25,801 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-18 22:03:25,801 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-18 22:03:25,812 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-18 22:03:25,812 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-18 22:03:25,813 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-18 22:03:25,813 - INFO - Iniciando backend FastAPI...
+2026-01-18 22:03:27,848 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-18 22:03:27,850 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-18 22:03:27,852 - INFO - BACKEND_DIR existe: True
+2026-01-18 22:03:27,854 - INFO - server.py existe: True
+2026-01-18 22:03:27,855 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-18 22:03:27,862 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-18 22:03:27,896 - INFO - Backend iniciado en puerto 8001 (PID: 35492)
+2026-01-18 22:03:27,901 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-18 22:03:37,533 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-18 22:12:16,093 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-18 22:12:16,093 - INFO - Cerrando proceso PID 50280...
+2026-01-18 22:12:16,761 - INFO - Proceso 50280 cerrado limpiamente
+2026-01-18 22:12:16,762 - INFO - Cerrando proceso PID 35492...
+2026-01-18 22:12:16,836 - INFO - Proceso 35492 cerrado limpiamente
+2026-01-18 22:12:16,837 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-18 22:12:18,854 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-26 19:27:02,897 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-26 19:27:03,057 - INFO - Iniciando MongoDB...
+2026-01-26 19:27:03,178 - INFO - Configurando MongoDB...
+2026-01-26 19:27:33,066 - ERROR - No se pudo iniciar MongoDB. Abortando.
+2026-01-26 19:28:05,808 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-26 19:28:05,809 - INFO - Iniciando MongoDB...
+2026-01-26 19:28:05,810 - INFO - Configurando MongoDB...
+2026-01-26 19:28:12,680 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 19:28:12,683 - INFO - Directorio existe: True
+2026-01-26 19:28:12,684 - INFO - Es directorio: True
+2026-01-26 19:28:12,824 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-26 19:28:12,873 - INFO - MongoDB iniciado en puerto 27017 (PID: 17560)
+2026-01-26 19:28:12,877 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 19:28:38,566 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-26 19:28:38,601 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-26 19:28:38,607 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-26 19:28:38,613 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-26 19:28:38,614 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-26 19:28:38,614 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-26 19:28:38,615 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-26 19:28:38,617 - INFO - Iniciando backend FastAPI...
+2026-01-26 19:28:40,663 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-26 19:28:40,709 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-26 19:28:40,711 - INFO - BACKEND_DIR existe: True
+2026-01-26 19:28:40,712 - INFO - server.py existe: True
+2026-01-26 19:28:40,719 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-26 19:28:40,721 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-26 19:28:40,761 - INFO - Backend iniciado en puerto 8001 (PID: 12916)
+2026-01-26 19:28:40,765 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-26 19:28:59,699 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-26 19:37:38,494 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-26 19:37:38,495 - INFO - Cerrando proceso PID 17560...
+2026-01-26 19:37:39,685 - INFO - Proceso 17560 cerrado limpiamente
+2026-01-26 19:37:39,689 - INFO - Cerrando proceso PID 12916...
+2026-01-26 19:37:39,752 - INFO - Proceso 12916 cerrado limpiamente
+2026-01-26 19:37:39,753 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-26 19:37:41,793 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-26 19:40:46,759 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-26 19:40:46,760 - INFO - Iniciando MongoDB...
+2026-01-26 19:40:46,760 - INFO - Configurando MongoDB...
+2026-01-26 19:40:53,923 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 19:40:53,924 - INFO - Directorio existe: True
+2026-01-26 19:40:53,924 - INFO - Es directorio: True
+2026-01-26 19:40:53,937 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-26 19:40:53,948 - INFO - MongoDB iniciado en puerto 27017 (PID: 18024)
+2026-01-26 19:40:53,952 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 19:41:04,071 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-26 19:41:04,075 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-26 19:41:04,076 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-26 19:41:04,076 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-26 19:41:04,077 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-26 19:41:04,079 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-26 19:41:04,081 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-26 19:41:04,081 - INFO - Iniciando backend FastAPI...
+2026-01-26 19:41:06,133 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-26 19:41:06,134 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-26 19:41:06,135 - INFO - BACKEND_DIR existe: True
+2026-01-26 19:41:06,135 - INFO - server.py existe: True
+2026-01-26 19:41:06,136 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-26 19:41:06,136 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-26 19:41:06,147 - INFO - Backend iniciado en puerto 8001 (PID: 8104)
+2026-01-26 19:41:06,148 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-26 19:41:12,140 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-26 19:53:06,572 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-26 19:53:06,573 - INFO - Cerrando proceso PID 18024...
+2026-01-26 19:53:07,380 - INFO - Proceso 18024 cerrado limpiamente
+2026-01-26 19:53:07,381 - INFO - Cerrando proceso PID 8104...
+2026-01-26 19:53:07,433 - INFO - Proceso 8104 cerrado limpiamente
+2026-01-26 19:53:07,435 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-26 19:53:09,448 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-26 20:12:21,758 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-26 20:12:21,759 - INFO - Iniciando MongoDB...
+2026-01-26 20:12:21,760 - INFO - Configurando MongoDB...
+2026-01-26 20:13:04,257 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 20:13:04,258 - INFO - Directorio existe: True
+2026-01-26 20:13:04,258 - INFO - Es directorio: True
+2026-01-26 20:13:04,274 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-26 20:13:04,281 - INFO - MongoDB iniciado en puerto 27017 (PID: 15620)
+2026-01-26 20:13:04,287 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 20:13:13,901 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-26 20:13:13,921 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-26 20:13:13,921 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-26 20:13:13,922 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-26 20:13:13,922 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-26 20:13:13,923 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-26 20:13:13,924 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-26 20:13:13,927 - INFO - Iniciando backend FastAPI...
+2026-01-26 20:13:15,975 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-26 20:13:15,977 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-26 20:13:15,978 - INFO - BACKEND_DIR existe: True
+2026-01-26 20:13:15,981 - INFO - server.py existe: True
+2026-01-26 20:13:15,983 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-26 20:13:15,985 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-26 20:13:15,999 - INFO - Backend iniciado en puerto 8001 (PID: 15660)
+2026-01-26 20:13:16,000 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-26 20:13:25,499 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-26 20:16:37,775 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-26 20:16:37,776 - INFO - Cerrando proceso PID 15620...
+2026-01-26 20:16:38,404 - INFO - Proceso 15620 cerrado limpiamente
+2026-01-26 20:16:38,404 - INFO - Cerrando proceso PID 15660...
+2026-01-26 20:16:38,443 - INFO - Proceso 15660 cerrado limpiamente
+2026-01-26 20:16:38,452 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-26 20:16:40,504 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-26 21:19:42,075 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-26 21:19:42,075 - INFO - Iniciando MongoDB...
+2026-01-26 21:19:42,076 - INFO - Configurando MongoDB...
+2026-01-26 21:19:47,292 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 21:19:47,293 - INFO - Directorio existe: True
+2026-01-26 21:19:47,294 - INFO - Es directorio: True
+2026-01-26 21:19:47,307 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-26 21:19:47,315 - INFO - MongoDB iniciado en puerto 27017 (PID: 3764)
+2026-01-26 21:19:47,316 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-26 21:19:58,402 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-26 21:19:58,406 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-26 21:19:58,407 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-26 21:19:58,407 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-26 21:19:58,409 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-26 21:19:58,410 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-26 21:19:58,413 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-26 21:19:58,414 - INFO - Iniciando backend FastAPI...
+2026-01-26 21:20:00,451 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-26 21:20:00,452 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-26 21:20:00,452 - INFO - BACKEND_DIR existe: True
+2026-01-26 21:20:00,453 - INFO - server.py existe: True
+2026-01-26 21:20:00,453 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-26 21:20:00,454 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-26 21:20:00,462 - INFO - Backend iniciado en puerto 8001 (PID: 1568)
+2026-01-26 21:20:00,462 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-26 21:20:06,428 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-26 22:31:16,853 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-26 22:31:16,855 - INFO - Cerrando proceso PID 3764...
+2026-01-26 22:31:17,428 - INFO - Proceso 3764 cerrado limpiamente
+2026-01-26 22:31:17,429 - INFO - Cerrando proceso PID 1568...
+2026-01-26 22:31:17,457 - INFO - Proceso 1568 cerrado limpiamente
+2026-01-26 22:31:17,458 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-26 22:31:19,491 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-29 16:41:17,519 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-29 16:41:17,769 - INFO - Iniciando MongoDB...
+2026-01-29 16:41:17,897 - INFO - Configurando MongoDB...
+2026-01-29 16:44:31,267 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 16:44:31,271 - INFO - Directorio existe: True
+2026-01-29 16:44:31,272 - INFO - Es directorio: True
+2026-01-29 16:44:31,467 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-29 16:44:31,503 - INFO - MongoDB iniciado en puerto 27017 (PID: 9368)
+2026-01-29 16:44:31,645 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 16:45:16,449 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-29 16:45:16,941 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-29 16:45:16,942 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-29 16:45:16,943 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-29 16:45:16,979 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-29 16:45:16,982 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-29 16:45:16,993 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-29 16:45:16,996 - INFO - Iniciando backend FastAPI...
+2026-01-29 16:45:19,233 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-29 16:45:19,273 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-29 16:45:19,275 - INFO - BACKEND_DIR existe: True
+2026-01-29 16:45:19,276 - INFO - server.py existe: True
+2026-01-29 16:45:19,277 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-29 16:45:19,277 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-29 16:45:19,336 - INFO - Backend iniciado en puerto 8001 (PID: 2480)
+2026-01-29 16:45:19,356 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-29 16:45:28,349 - ERROR - Código de salida: 3221225786
+2026-01-29 16:45:57,807 - ERROR - No se pudo iniciar el backend. Abortando.
+2026-01-29 16:45:57,808 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-29 16:45:57,808 - INFO - Cerrando proceso PID 9368...
+2026-01-29 16:45:58,473 - INFO - Proceso 9368 cerrado limpiamente
+2026-01-29 16:45:58,474 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-29 16:46:00,516 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-29 16:46:07,495 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-29 16:46:07,496 - INFO - Iniciando MongoDB...
+2026-01-29 16:46:07,497 - INFO - Configurando MongoDB...
+2026-01-29 16:46:12,078 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 16:46:12,085 - INFO - Directorio existe: True
+2026-01-29 16:46:12,086 - INFO - Es directorio: True
+2026-01-29 16:46:12,155 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-29 16:46:12,173 - INFO - MongoDB iniciado en puerto 27017 (PID: 2380)
+2026-01-29 16:46:12,177 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 16:46:31,161 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 34 archivos/carpetas
+2026-01-29 16:46:31,204 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-29 16:46:31,205 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-29 16:46:31,206 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-29 16:46:31,219 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-29 16:46:31,232 - INFO -   - collection-2--7341889723656509342.wt
+2026-01-29 16:46:31,233 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-29 16:46:31,238 - INFO - Iniciando backend FastAPI...
+2026-01-29 16:46:33,589 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-29 16:46:33,590 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-29 16:46:33,591 - INFO - BACKEND_DIR existe: True
+2026-01-29 16:46:33,592 - INFO - server.py existe: True
+2026-01-29 16:46:33,593 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-29 16:46:33,595 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-29 16:46:33,610 - INFO - Backend iniciado en puerto 8001 (PID: 16812)
+2026-01-29 16:46:33,616 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-29 16:46:55,820 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-29 17:26:39,280 - ERROR - Un proceso ha terminado inesperadamente (PID: 2380)
+2026-01-29 17:26:39,319 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-29 17:26:39,411 - INFO - Cerrando proceso PID 16812...
+2026-01-29 17:26:39,546 - INFO - Proceso 16812 cerrado limpiamente
+2026-01-29 17:26:39,547 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-29 17:26:41,578 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-29 22:38:29,037 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-29 22:38:29,356 - INFO - Iniciando MongoDB...
+2026-01-29 22:38:29,531 - INFO - Configurando MongoDB...
+2026-01-29 22:38:33,959 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 22:38:34,133 - INFO - Directorio existe: True
+2026-01-29 22:38:34,134 - INFO - Es directorio: True
+2026-01-29 22:38:39,413 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-29 22:38:39,762 - INFO - MongoDB iniciado en puerto 27017 (PID: 14876)
+2026-01-29 22:38:40,114 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 22:39:38,501 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 36 archivos/carpetas
+2026-01-29 22:39:38,540 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-29 22:39:38,541 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-29 22:39:38,542 - INFO -   - collection-0-5869293933756661312.wt
+2026-01-29 22:39:38,556 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-29 22:39:38,565 - INFO -   - collection-2--5511260628942750685.wt
+2026-01-29 22:39:38,566 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-29 22:39:38,567 - INFO - Iniciando backend FastAPI...
+2026-01-29 22:39:40,846 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-29 22:39:40,847 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-29 22:39:40,848 - INFO - BACKEND_DIR existe: True
+2026-01-29 22:39:40,849 - INFO - server.py existe: True
+2026-01-29 22:39:40,850 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-29 22:39:40,850 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-29 22:39:40,863 - INFO - Backend iniciado en puerto 8001 (PID: 4152)
+2026-01-29 22:39:40,875 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-29 22:39:58,222 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-29 22:58:17,356 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-29 22:58:17,358 - INFO - Cerrando proceso PID 14876...
+2026-01-29 22:58:18,166 - INFO - Proceso 14876 cerrado limpiamente
+2026-01-29 22:58:18,174 - INFO - Cerrando proceso PID 4152...
+2026-01-29 22:58:18,247 - INFO - Proceso 4152 cerrado limpiamente
+2026-01-29 22:58:18,253 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-29 22:58:21,230 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-01-29 22:58:35,215 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-01-29 22:58:35,216 - INFO - Iniciando MongoDB...
+2026-01-29 22:58:35,217 - INFO - Configurando MongoDB...
+2026-01-29 22:59:03,828 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 22:59:03,828 - INFO - Directorio existe: True
+2026-01-29 22:59:03,829 - INFO - Es directorio: True
+2026-01-29 22:59:03,847 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-01-29 22:59:03,857 - INFO - MongoDB iniciado en puerto 27017 (PID: 2408)
+2026-01-29 22:59:03,858 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-01-29 22:59:14,974 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 38 archivos/carpetas
+2026-01-29 22:59:14,982 - INFO -   - collection-0--5511260628942750685.wt
+2026-01-29 22:59:14,984 - INFO -   - collection-0--7341889723656509342.wt
+2026-01-29 22:59:14,985 - INFO -   - collection-0--8986761422908601180.wt
+2026-01-29 22:59:14,985 - INFO -   - collection-0-5869293933756661312.wt
+2026-01-29 22:59:14,986 - INFO -   - collection-10--7341889723656509342.wt
+2026-01-29 22:59:14,990 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-01-29 22:59:14,991 - INFO - Iniciando backend FastAPI...
+2026-01-29 22:59:17,017 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-01-29 22:59:17,019 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-01-29 22:59:17,019 - INFO - BACKEND_DIR existe: True
+2026-01-29 22:59:17,020 - INFO - server.py existe: True
+2026-01-29 22:59:17,021 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-01-29 22:59:17,023 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-01-29 22:59:17,037 - INFO - Backend iniciado en puerto 8001 (PID: 14968)
+2026-01-29 22:59:17,040 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-01-29 22:59:26,822 - INFO - Abriendo navegador en http://localhost:3000
+2026-01-29 23:09:19,841 - INFO - 
+
+Cerrando PAU Study Master...
+2026-01-29 23:09:19,842 - INFO - Cerrando proceso PID 2408...
+2026-01-29 23:09:20,647 - INFO - Proceso 2408 cerrado limpiamente
+2026-01-29 23:09:20,647 - INFO - Cerrando proceso PID 14968...
+2026-01-29 23:09:20,693 - INFO - Proceso 14968 cerrado limpiamente
+2026-01-29 23:09:20,694 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-01-29 23:09:22,713 - INFO - Todos los procesos terminados. ¡Hasta pronto!
+2026-03-03 16:02:30,823 - INFO - Paso 1/2: Iniciando MongoDB...
+2026-03-03 16:02:30,881 - INFO - Iniciando MongoDB...
+2026-03-03 16:02:30,883 - INFO - Configurando MongoDB...
+2026-03-03 16:02:40,821 - INFO - Directorio de datos MongoDB: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-03-03 16:02:40,850 - INFO - Directorio existe: True
+2026-03-03 16:02:40,854 - INFO - Es directorio: True
+2026-03-03 16:02:41,428 - INFO - Ejecutando: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\mongodb\bin\mongod.exe --dbpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db --port 27017 --logpath c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\logs\mongod.log --bind_ip 127.0.0.1 --storageEngine wiredTiger --noauth
+2026-03-03 16:02:42,314 - INFO - MongoDB iniciado en puerto 27017 (PID: 10228)
+2026-03-03 16:02:42,318 - INFO - MongoDB guardará datos en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db
+2026-03-03 16:03:20,978 - INFO - Archivos en c:\Users\Darío\Downloads\PAUStudyMaster\app_final\data\db: 38 archivos/carpetas
+2026-03-03 16:03:21,536 - INFO -   - collection-0--5511260628942750685.wt
+2026-03-03 16:03:21,603 - INFO -   - collection-0--7341889723656509342.wt
+2026-03-03 16:03:21,656 - INFO -   - collection-0--8986761422908601180.wt
+2026-03-03 16:03:21,682 - INFO -   - collection-0-5869293933756661312.wt
+2026-03-03 16:03:21,713 - INFO -   - collection-10--7341889723656509342.wt
+2026-03-03 16:03:21,780 - INFO - Paso 2/2: Iniciando Backend (incluye Frontend)...
+2026-03-03 16:03:21,830 - INFO - Iniciando backend FastAPI...
+2026-03-03 16:03:24,043 - INFO - Cargando variables de entorno desde c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\.env
+2026-03-03 16:03:24,049 - INFO - Buscando server.py en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend\server.py
+2026-03-03 16:03:24,074 - INFO - BACKEND_DIR existe: True
+2026-03-03 16:03:24,087 - INFO - server.py existe: True
+2026-03-03 16:03:24,100 - INFO - Ejecutando comando: C:\Python314\python.exe -m uvicorn server:app --host 0.0.0.0 --port 8001
+2026-03-03 16:03:24,161 - INFO - Directorio de trabajo: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend
+2026-03-03 16:03:24,219 - INFO - Backend iniciado en puerto 8001 (PID: 14332)
+2026-03-03 16:03:24,231 - INFO - Logs del backend en: c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stdout.log y c:\Users\Darío\Downloads\PAUStudyMaster\app_final\backend_stderr.log
+2026-03-03 16:03:40,539 - INFO - Abriendo navegador en http://localhost:3000
+2026-03-03 16:23:32,036 - INFO - 
+
+Cerrando PAU Study Master...
+2026-03-03 16:23:32,037 - INFO - Cerrando proceso PID 10228...
+2026-03-03 16:23:32,928 - INFO - Proceso 10228 cerrado limpiamente
+2026-03-03 16:23:32,928 - INFO - Cerrando proceso PID 14332...
+2026-03-03 16:23:32,975 - INFO - Proceso 14332 cerrado limpiamente
+2026-03-03 16:23:32,975 - INFO - Esperando a que MongoDB complete escritura de datos...
+2026-03-03 16:23:35,029 - INFO - Todos los procesos terminados. ¡Hasta pronto!
