@@ -1406,15 +1406,20 @@ async def get_flashcard_decks(
     now = datetime.now(timezone.utc)
     
     for fc in flashcards:
-        deck_key = f"{fc['subject_id']}::{fc['topic']}"
+        # Use a safe key for URLs and IDs
+        # Instead of subject_id::topic which might have spaces or special chars
+        # we'll use a more robust way to identify the deck
+        subject_id = fc.get('subject_id', 'unknown')
+        topic = fc.get('topic', 'General')
+        deck_key = f"{subject_id}____{topic.replace(' ', '_')}"
         
         if deck_key not in decks_dict:
             # Calculate next review date for the deck (earliest card that needs review)
             decks_dict[deck_key] = {
                 "deck_id": deck_key,
-                "subject_id": fc['subject_id'],
-                "subject_name": fc['subject_name'],
-                "topic": fc['topic'],
+                "subject_id": subject_id,
+                "subject_name": fc.get('subject_name', 'Sin Asignatura'),
+                "topic": topic,
                 "card_count": 0,
                 "due_count": 0,
                 "mastered_count": 0,
@@ -1463,11 +1468,81 @@ async def get_deck_flashcards(
     """Get all flashcards for a specific deck"""
     user = await get_current_user(authorization, request)
     
-    # Parse deck_id (format: subject_id::topic)
-    parts = deck_id.split('::', 1)
+    # Parse deck_id (format: subject_id____topic)
+    parts = deck_id.split('____', 1)
     if len(parts) != 2:
         raise HTTPException(status_code=400, detail="Invalid deck_id format")
+            
+    subject_id = parts[0]
+    topic = parts[1].replace('_', ' ')
     
+    flashcards = await db.flashcards.find(
+        {"user_id": user.user_id, "subject_id": subject_id, "topic": topic},
+        {"_id": 0}
+    ).to_list(1000)
+    
+    return flashcards
+
+@api_router.delete("/flashcard-decks/{deck_id}")
+async def delete_flashcard_deck(
+    deck_id: str,
+    authorization: Optional[str] = Header(None),
+    request: Request = None
+):
+    """Delete all flashcards in a deck"""
+    user = await get_current_user(authorization, request)
+    
+    # Parse deck_id
+    parts = deck_id.split('____', 1)
+    if len(parts) != 2:
+        raise HTTPException(status_code=400, detail="Invalid deck_id format")
+        
+    subject_id = parts[0]
+    topic = parts[1].replace('_', ' ')
+    
+    result = await db.flashcards.delete_many({
+        "user_id": user.user_id, 
+        "subject_id": subject_id, 
+        "topic": topic
+    })
+    
+    return {"message": f"Mazo eliminado correctamente. Se eliminaron {result.deleted_count} flashcards."}
+
+@api_router.put("/flashcard-decks/{deck_id}")
+async def update_flashcard_deck(
+    deck_id: str,
+    deck_data: Dict[str, Any],
+    authorization: Optional[str] = Header(None),
+    request: Request = None
+):
+    """Update topic/subject for all flashcards in a deck"""
+    user = await get_current_user(authorization, request)
+    
+    parts = deck_id.split('____', 1)
+    if len(parts) != 2:
+        raise HTTPException(status_code=400, detail="Invalid deck_id format")
+        
+    old_subject_id = parts[0]
+    old_topic = parts[1].replace('_', ' ')
+    
+    new_subject_id = deck_data.get('subject_id')
+    new_topic = deck_data.get('topic')
+    new_subject_name = deck_data.get('subject_name')
+    
+    update_data = {}
+    if new_subject_id: update_data['subject_id'] = new_subject_id
+    if new_topic: update_data['topic'] = new_topic
+    if new_subject_name: update_data['subject_name'] = new_subject_name
+    
+    if not update_data:
+        return {"message": "No hay datos para actualizar"}
+        
+    result = await db.flashcards.update_many(
+        {"user_id": user.user_id, "subject_id": old_subject_id, "topic": old_topic},
+        {"$set": update_data}
+    )
+    
+    return {"message": f"Mazo actualizado. {result.modified_count} flashcards modificadas."}
     subject_id, topic = parts
     
     # Get flashcards for this deck
@@ -1523,36 +1598,6 @@ async def update_deck(
         "updated_count": result.modified_count
     }
 
-@api_router.delete("/flashcard-decks/{deck_id}")
-async def delete_deck(
-    deck_id: str,
-    authorization: Optional[str] = Header(None),
-    request: Request = None
-):
-    """Delete all flashcards in a deck"""
-    user = await get_current_user(authorization, request)
-    
-    # Parse deck_id (format: subject_id_topic)
-    parts = deck_id.split('_', 1)
-    if len(parts) != 2:
-        raise HTTPException(status_code=400, detail="Invalid deck_id format")
-    
-    subject_id, topic = parts
-    
-    # Delete all flashcards in this deck
-    result = await db.flashcards.delete_many({
-        "user_id": user.user_id,
-        "subject_id": subject_id,
-        "topic": topic
-    })
-    
-    if result.deleted_count == 0:
-        raise HTTPException(status_code=404, detail="Deck not found or already empty")
-    
-    return {
-        "message": f"Deck deleted successfully. {result.deleted_count} flashcards removed.",
-        "deleted_count": result.deleted_count
-    }
 
 # ==================== CHECKLIST ROUTES ====================
 
@@ -1816,27 +1861,81 @@ async def chat_with_bot(
     
     # Build context
     if chat_request.chat_type == "parent":
-        system_msg = """You are a study planning AI assistant. Your role is to create personalized daily study plans based on:
-- The student's current date and available time
-- Their uploaded schedule
-- Their syllabus and exam dates
-- Spaced repetition principles (active recall)
+        # Get exams, schedule, and syllabi to provide full context
+        exams = await db.exams.find({"user_id": user.user_id}).to_list(100)
+        exam_context = "\n".join([f"- {e['subject_name']} on {e['date']} ({e.get('type', 'Exam')})" for e in exams])
+        
+        schedule_doc = await db.schedules.find_one({"user_id": user.user_id})
+        schedule_context = schedule_doc['file_content'] if schedule_doc else "No hay horario subido."
+        
+        syllabi = await db.syllabi.find({"user_id": user.user_id}).to_list(100)
+        syllabi_context = ""
+        for s in syllabi:
+            subj = await db.subjects.find_one({"subject_id": s['subject_id']})
+            subj_name = subj['name'] if subj else "Unknown"
+            syllabi_context += f"\nTemario de {subj_name} ({s['file_name']}):\n{s['content'][:1000]}...\n"
+        
+        system_msg = f"""You are a study planning AI assistant. Your role is to help students manage their time, exams, and study materials.
 
-Provide specific, actionable study plans with time allocations and resources."""
+HORARIO DEL ESTUDIANTE:
+{schedule_context}
+
+EXÁMENES ACTUALES:
+{exam_context}
+
+RECURSOS Y TEMARIOS SUBIDOS:
+{syllabi_context}
+
+IMPORTANT: Use the information above to provide highly personalized recommendations.
+If the user wants to ADD or EDIT an exam, you must first ask for their explicit permission to modify their records.
+Once they give permission, you can provide a JSON block in your response that the system will process.
+
+Format for adding/editing an exam (only after getting permission):
+```json
+{{
+  "action": "upsert_exam",
+  "exam": {{
+    "subject_name": "Name of the subject",
+    "date": "YYYY-MM-DD",
+    "type": "Parcial/Final/etc",
+    "notes": "Optional notes"
+  }}
+}}
+```
+
+Format for deleting an exam:
+```json
+{{
+  "action": "delete_exam",
+  "subject_name": "Name of the subject to remove"
+}}
+```
+Provide specific, actionable study plans with time allocations and resources based on their specific schedule and uploaded materials."""
     else:
         # Subject-specific chatbot
         subject_doc = await db.subjects.find_one({"subject_id": chat_request.chat_type}, {"_id": 0})
         if not subject_doc:
             raise HTTPException(status_code=404, detail="Subject not found")
         
+        # Get specific resources for this subject
+        syllabus_doc = await db.syllabi.find_one({"user_id": user.user_id, "subject_id": chat_request.chat_type})
+        resources_context = f"\nRECURSOS DISPONIBLES:\nArchivo: {syllabus_doc['file_name']}\nContenido:\n{syllabus_doc['content'][:1500]}...\n" if syllabus_doc else "\nNo hay recursos específicos subidos para esta asignatura todavía."
+        
+        # Get flashcards for this subject
+        flashcards = await db.flashcards.find({"user_id": user.user_id, "subject_id": chat_request.chat_type}).to_list(100)
+        flashcards_context = "\nFLASHCARDS DE ESTA ASIGNATURA:\n" + "\n".join([f"- P: {f['question']} | R: {f['answer']}" for f in flashcards[:20]]) if flashcards else "\nNo hay flashcards creadas para esta asignatura."
+        
         system_msg = f"""You are a {subject_doc['name']} tutor. Help students with:
-- Understanding concepts
+- Understanding concepts based on their uploaded resources
 - Solving problems step by step
-- Providing study resources
-- Generating practice questions
-- Creating mock exams
+- Practicing with their flashcards
+- Generating mock exams
 
-Be clear, patient, and educational."""
+CONTEXTO ESPECÍFICO DE LA ASIGNATURA ({subject_doc['name']}):
+{resources_context}
+{flashcards_context}
+
+Be clear, patient, and educational. Use the provided resources and flashcards to give context-aware answers and recommendations."""
     
     # Get AI response
     try:

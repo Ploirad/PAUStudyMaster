@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -6,7 +8,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Brain, Send, Trash2, MessageCircle } from 'lucide-react';
+import { Brain, Send, Trash2, MessageCircle, Download } from 'lucide-react';
 import { toast } from 'sonner';
 import { useSubjects } from '@/contexts/SubjectsContext';
 
@@ -88,6 +90,39 @@ const ChatbotsTab = ({ user }) => {
 
       if (response.ok) {
         const data = await response.json();
+
+        // Handle AI actions (upsert/delete exams)
+        if (data.message && data.message.includes('```json')) {
+          try {
+            const jsonMatch = data.message.match(/```json\n([\s\S]*?)\n```/);
+            if (jsonMatch) {
+              const actionData = JSON.parse(jsonMatch[1]);
+              if (actionData.action === 'upsert_exam') {
+                await fetch(`${BACKEND_URL}/api/exams`, {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  credentials: 'include',
+                  body: JSON.stringify(actionData.exam)
+                });
+                toast.success(`Examen de ${actionData.exam.subject_name} actualizado`);
+              } else if (actionData.action === 'delete_exam') {
+                // Find the exam id first or use a new endpoint if available
+                const examsRes = await fetch(`${BACKEND_URL}/api/exams`, { credentials: 'include' });
+                const exams = await examsRes.json();
+                const examToDelete = exams.find(e => e.subject_name.toLowerCase() === actionData.subject_name.toLowerCase());
+                if (examToDelete) {
+                  await fetch(`${BACKEND_URL}/api/exams/${examToDelete.exam_id}`, {
+                    method: 'DELETE',
+                    credentials: 'include'
+                  });
+                  toast.success(`Examen de ${actionData.subject_name} eliminado`);
+                }
+              }
+            }
+          } catch (e) {
+            console.error('Error processing AI action:', e);
+          }
+        }
         // Refresh chat history
         await fetchChatHistory(activeChat);
         setMessage('');
@@ -172,6 +207,7 @@ const ChatbotsTab = ({ user }) => {
                 sendMessage={sendMessage}
                 clearHistory={clearHistory}
                 loading={loading}
+                chatType="parent"
               />
             </CardContent>
           </Card>
@@ -201,6 +237,7 @@ const ChatbotsTab = ({ user }) => {
                   sendMessage={sendMessage}
                   clearHistory={clearHistory}
                   loading={loading}
+                  chatType={subject.subject_id}
                 />
               </CardContent>
             </Card>
@@ -211,7 +248,37 @@ const ChatbotsTab = ({ user }) => {
   );
 };
 
-const ChatInterface = ({ chatHistory, message, setMessage, sendMessage, clearHistory, loading }) => {
+const ChatInterface = ({ chatHistory, message, setMessage, sendMessage, clearHistory, loading, chatType }) => {
+  const downloadMessages = () => {
+    if (chatHistory.length === 0) {
+      toast.error('No hay mensajes para descargar');
+      return;
+    }
+    const timestamp = new Date().toLocaleString('es-ES');
+    const content = chatHistory.map(msg => ({
+      role: msg.role === 'user' ? 'Tú' : 'Asistente',
+      mensaje: msg.content,
+      hora: new Date(msg.timestamp).toLocaleString('es-ES')
+    }));
+    const jsonStr = JSON.stringify(
+      {
+        tipo_chat: chatType,
+        fecha_descarga: timestamp,
+        total_mensajes: chatHistory.length,
+        mensajes: content
+      },
+      null,
+      2
+    );
+    const element = document.createElement('a');
+    element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(jsonStr));
+    element.setAttribute('download', `chat_${chatType}_${new Date().getTime()}.json`);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+    toast.success('¡Mensajes descargados correctamente!');
+  };
   return (
     <div className="space-y-4">
       <ScrollArea className="h-[400px] w-full border rounded-lg p-4 bg-gray-50" data-testid="chat-messages">
@@ -235,8 +302,44 @@ const ChatInterface = ({ chatHistory, message, setMessage, sendMessage, clearHis
                   }`}
                   data-testid={`chat-message-${msg.role}`}
                 >
-                  <p className="whitespace-pre-wrap">{msg.content}</p>
-                  <p className="text-xs mt-1 opacity-70">
+                    <div className={`text-sm leading-relaxed ${msg.role === 'user' ? 'text-white' : 'text-gray-900'}`}>
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        p: ({node, ...props}) => <p className="mb-2 last:mb-0" {...props} />,
+                        ul: ({node, ...props}) => <ul className="list-disc list-inside mb-2 ml-2" {...props} />,
+                        ol: ({node, ...props}) => <ol className="list-decimal list-inside mb-2 ml-2" {...props} />,
+                        li: ({node, ...props}) => <li className="mb-1" {...props} />,
+                        blockquote: ({node, ...props}) => (
+                          <blockquote className={`border-l-4 ${msg.role === 'user' ? 'border-blue-300' : 'border-gray-300'} pl-3 italic mb-2 py-1`} {...props} />
+                        ),
+                        code: ({node, inline, ...props}) => 
+                          inline ? 
+                            <code className={`${msg.role === 'user' ? 'bg-blue-700' : 'bg-gray-200'} rounded px-1.5 py-0.5 text-xs font-mono`} {...props} /> :
+                            <code className={`block ${msg.role === 'user' ? 'bg-blue-700' : 'bg-gray-100'} rounded p-3 mb-2 overflow-x-auto text-xs font-mono`} {...props} />,
+                        pre: ({node, ...props}) => <pre className="mb-2 overflow-x-auto" {...props} />,
+                        h1: ({node, ...props}) => <h1 className="text-lg font-bold mb-2" {...props} />,
+                        h2: ({node, ...props}) => <h2 className="text-base font-bold mb-2" {...props} />,
+                        h3: ({node, ...props}) => <h3 className="text-sm font-bold mb-1" {...props} />,
+                        h4: ({node, ...props}) => <h4 className="text-sm font-semibold mb-1" {...props} />,
+                        h5: ({node, ...props}) => <h5 className="text-xs font-semibold mb-1" {...props} />,
+                        h6: ({node, ...props}) => <h6 className="text-xs font-semibold mb-1" {...props} />,
+                        strong: ({node, ...props}) => <strong className="font-bold" {...props} />,
+                        em: ({node, ...props}) => <em className="italic" {...props} />,
+                        a: ({node, ...props}) => (
+                          <a className={`underline ${msg.role === 'user' ? 'text-blue-200 hover:text-blue-100' : 'text-blue-600 hover:text-blue-800'}`} target="_blank" rel="noopener noreferrer" {...props} />
+                        ),
+                        table: ({node, ...props}) => <table className="border-collapse border border-gray-300 mb-2 text-xs" {...props} />,
+                        th: ({node, ...props}) => <th className="border border-gray-300 px-2 py-1 bg-gray-100 font-bold" {...props} />,
+                        td: ({node, ...props}) => <td className="border border-gray-300 px-2 py-1" {...props} />,
+                        hr: ({node, ...props}) => <hr className="my-2 border-gray-300" {...props} />,
+                        del: ({node, ...props}) => <del className="line-through" {...props} />
+                      }}
+                    >
+                      {msg.content}
+                    </ReactMarkdown>
+                  </div>
+                  <p className="text-xs mt-2 opacity-70">
                     {new Date(msg.timestamp).toLocaleTimeString('es-ES')}
                   </p>
                 </div>
@@ -263,16 +366,28 @@ const ChatInterface = ({ chatHistory, message, setMessage, sendMessage, clearHis
         />
       </div>
 
-      <div className="flex justify-between">
-        <Button
-          data-testid="clear-chat-button"
-          variant="outline"
-          onClick={clearHistory}
-          size="sm"
-        >
-          <Trash2 className="h-4 w-4 mr-2" />
-          Limpiar historial
-        </Button>
+      <div className="flex justify-between gap-2">
+        <div className="flex gap-2">
+          <Button
+            data-testid="clear-chat-button"
+            variant="outline"
+            onClick={clearHistory}
+            size="sm"
+          >
+            <Trash2 className="h-4 w-4 mr-2" />
+            Limpiar historial
+          </Button>
+          <Button
+            data-testid="download-messages-button"
+            variant="outline"
+            onClick={downloadMessages}
+            size="sm"
+            disabled={chatHistory.length === 0}
+          >
+            <Download className="h-4 w-4 mr-2" />
+            Descargar
+          </Button>
+        </div>
         <Button
           data-testid="send-message-button"
           onClick={sendMessage}
