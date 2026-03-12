@@ -90,37 +90,17 @@ const ChatbotsTab = ({ user }) => {
 
       if (response.ok) {
         const data = await response.json();
-
-        // Handle AI actions (upsert/delete exams)
-        if (data.message && data.message.includes('```json')) {
-          try {
-            const jsonMatch = data.message.match(/```json\n([\s\S]*?)\n```/);
-            if (jsonMatch) {
-              const actionData = JSON.parse(jsonMatch[1]);
-              if (actionData.action === 'upsert_exam') {
-                await fetch(`${BACKEND_URL}/api/exams`, {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  credentials: 'include',
-                  body: JSON.stringify(actionData.exam)
-                });
-                toast.success(`Examen de ${actionData.exam.subject_name} actualizado`);
-              } else if (actionData.action === 'delete_exam') {
-                // Find the exam id first or use a new endpoint if available
-                const examsRes = await fetch(`${BACKEND_URL}/api/exams`, { credentials: 'include' });
-                const exams = await examsRes.json();
-                const examToDelete = exams.find(e => e.subject_name.toLowerCase() === actionData.subject_name.toLowerCase());
-                if (examToDelete) {
-                  await fetch(`${BACKEND_URL}/api/exams/${examToDelete.exam_id}`, {
-                    method: 'DELETE',
-                    credentials: 'include'
-                  });
-                  toast.success(`Examen de ${actionData.subject_name} eliminado`);
-                }
-              }
+        
+        // Show a toast for each exam action executed by the backend
+        if (Array.isArray(data.action_results)) {
+          for (const result of data.action_results) {
+            if (result.action === 'upsert_exam' && result.status === 'ok') {
+              toast.success(`Examen de ${result.subject_name} añadido a tu agenda`);
+            } else if (result.action === 'delete_exam' && result.status === 'ok') {
+              toast.success(`Examen de ${result.subject_name} eliminado`);
+            } else if (result.action === 'delete_exam' && result.status === 'not_found') {
+              toast.error(`No se encontró el examen de ${result.subject_name}`);
             }
-          } catch (e) {
-            console.error('Error processing AI action:', e);
           }
         }
         // Refresh chat history

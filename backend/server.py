@@ -1887,29 +1887,36 @@ RECURSOS Y TEMARIOS SUBIDOS:
 {syllabi_context}
 
 IMPORTANT: Use the information above to provide highly personalized recommendations.
-If the user wants to ADD or EDIT an exam, you must first ask for their explicit permission to modify their records.
-Once they give permission, you can provide a JSON block in your response that the system will process.
+If the user mentions one or more exams (subject + date), add ALL of them immediately without asking for confirmation.
+If the user asks to delete exams, delete ALL of them immediately without asking for confirmation.
 
-Format for adding/editing an exam (only after getting permission):
-```json
-{{
-  "action": "upsert_exam",
-  "exam": {{
-    "subject_name": "Name of the subject",
-    "date": "YYYY-MM-DD",
-    "type": "Parcial/Final/etc",
-    "notes": "Optional notes"
-  }}
-}}
-```
+Whenever you add or delete exams, append ONE single JSON block at the END of your response with ALL the actions in a list, using EXACTLY this format:
 
-Format for deleting an exam:
-```json
+ACTION_JSON_START
 {{
-  "action": "delete_exam",
-  "subject_name": "Name of the subject to remove"
+  "actions": [
+    {{
+      "action": "upsert_exam",
+      "subject_name": "Exact subject name",
+      "date": "YYYY-MM-DD",
+      "time": "HH:MM or null",
+      "title": "Brief exam title e.g. Parcial 1",
+      "notes": "Optional notes or null"
+    }},
+    {{
+      "action": "upsert_exam",
+      "subject_name": "Another subject",
+      "date": "YYYY-MM-DD",
+      "time": null,
+      "title": "Parcial 1",
+      "notes": null
+    }}
+  ]
 }}
-```
+ACTION_JSON_END
+
+For deleting, use "action": "delete_exam" with "subject_name" only.
+Write your conversational response first (confirming ALL exams you added/deleted), then append the single ACTION_JSON block at the very end. Only include the block when actually performing exam actions.
 Provide specific, actionable study plans with time allocations and resources based on their specific schedule and uploaded materials."""
     else:
         # Subject-specific chatbot
@@ -1950,20 +1957,74 @@ Be clear, patient, and educational. Use the provided resources and flashcards to
         ]
         response = await call_llm(messages, model="gemini-3-pro-preview")
         
-        # Save assistant message
+        # Process any exam actions embedded in the response (backend-side)
+        action_results = []
+        clean_response = response
+        if "ACTION_JSON_START" in response and "ACTION_JSON_END" in response:
+            try:
+                json_start = response.index("ACTION_JSON_START") + len("ACTION_JSON_START")
+                json_end = response.index("ACTION_JSON_END")
+                json_str = response[json_start:json_end].strip()
+                action_data = json.loads(json_str)
+                # Remove the action block from the visible message
+                before = response[:response.index("ACTION_JSON_START")].strip()
+                after = response[response.index("ACTION_JSON_END") + len("ACTION_JSON_END"):].strip()
+                clean_response = (before + ("\n\n" + after if after else "")).strip()
+                # Support both {"actions": [...]} list format and legacy single {"action": ...}
+                actions_list = action_data.get("actions") if "actions" in action_data else [action_data]
+                
+                for action_item in actions_list:
+                    if action_item.get("action") == "upsert_exam":
+                        subj_name = action_item.get("subject_name", "")
+                        subject_doc = await db.subjects.find_one({
+                            "name": {"$regex": f"^{subj_name}$", "$options": "i"}
+                        })
+                        subject_id = subject_doc["subject_id"] if subject_doc else f"subj_{subj_name.lower().replace(' ', '_')}"
+                        
+                        exam = Exam(
+                            user_id=user.user_id,
+                            subject_id=subject_id,
+                            subject_name=subj_name,
+                            title=action_item.get("title") or f"Examen de {subj_name}",
+                            date=action_item.get("date", ""),
+                            time=action_item.get("time") if action_item.get("time") not in (None, "null") else None,
+                            notes=action_item.get("notes") if action_item.get("notes") not in (None, "null") else None,
+                            reminder=True
+                        )
+                        exam_dict = exam.model_dump()
+                        exam_dict["created_at"] = exam_dict["created_at"].isoformat()
+                        await db.exams.insert_one(exam_dict)
+                        action_results.append({"status": "ok", "action": "upsert_exam", "subject_name": subj_name})
+                        
+                    elif action_item.get("action") == "delete_exam":
+                        subj_name = action_item.get("subject_name", "")
+                        result = await db.exams.delete_one({
+                            "user_id": user.user_id,
+                            "subject_name": {"$regex": f"^{subj_name}$", "$options": "i"}
+                        })
+                        if result.deleted_count > 0:
+                            action_results.append({"status": "ok", "action": "delete_exam", "subject_name": subj_name})
+                        else:
+                            action_results.append({"status": "not_found", "action": "delete_exam", "subject_name": subj_name})
+                            
+            except Exception as e:
+                logging.error(f"Error processing exam action from AI response: {e}")
+                clean_response = response  # Fallback to raw response on error
+        # Save assistant message (with clean text, no JSON block)
         assistant_msg = ChatMessage(
             user_id=user.user_id,
             chat_type=chat_request.chat_type,
             role="assistant",
-            content=response
+            content=clean_response
         )
         assistant_msg_dict = assistant_msg.model_dump()
         assistant_msg_dict['timestamp'] = assistant_msg_dict['timestamp'].isoformat()
         await db.chat_messages.insert_one(assistant_msg_dict)
         
         return {
-            "message": response,
-            "timestamp": assistant_msg.timestamp.isoformat()
+            "message": clean_response,
+            "timestamp": assistant_msg.timestamp.isoformat(),
+            "action_results": action_results
         }
     except Exception as e:
         logging.error(f"Chat error: {e}")
